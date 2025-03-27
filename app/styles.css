@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scrolling on body */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    /* This ensures the content expands fully */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Prevents body scrolling */
+}
+
+.container-fluid {
+    flex-grow: 1;
+    /* Ensures the page content fills the space */
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    /* Prevents extra scrolling */
+}
+
+.sticky-top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.sticky-toolbar {
+    position: sticky;
+    /* top: 56px; */
+    z-index: 1010;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar {
+    position: sticky;
+    /* top: 56px; */
+    /* Navbar height */
+    height: calc(100vh - 56px);
+    /* Adjust for navbar */
+    overflow-y: auto;
+}
+
+.blog-content {
+    height: calc(100vh - 56px - 40px);
+    /* Navbar + footer space */
+    overflow-y: auto;
+    /* Scroll here only */
+    padding-bottom: 20px;
+}
