@@ -16,12 +16,11 @@ body {
     /* Prevents body scrolling */
 }
 
-.container-fluid {
+/* .container-fluid {
     flex-grow: 1;
-    /* Ensures the page content fills the space */
     display: flex;
     flex-direction: column;
-}
+} */
 
 .row {
     flex-grow: 1;
@@ -36,14 +35,6 @@ body {
     z-index: 2000;
 }
 
-.sticky-toolbar {
-    position: sticky;
-    /* top: 56px; */
-    z-index: 1010;
-    background: white;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
 
 .sidebar {
     position: sticky;
@@ -59,5 +50,5 @@ body {
     /* Navbar + footer space */
     overflow-y: auto;
     /* Scroll here only */
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }

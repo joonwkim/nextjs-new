@@ -39,22 +39,53 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </nav>
 
         {/* Main Layout */}
-        <div className="container-fluid layout-wrapper">
-          <div className="row">
+        <div className="row">
 
-            {/* Sidebar (Hidden on Small Screens) */}
-            <div className={`col-md-3 col-lg-2 sidebar ${sidebarOpen ? "show" : ""}`}>
-              <ul className="nav flex-column">
-                <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
-                <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
-              </ul>
-            </div>
+          {/* Sidebar (Hidden on Small Screens) */}
+          <div className="col-3 sidebar">
+            <ul className="nav flex-column">
+              <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Categories</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Settings</a></li>
+            </ul>
+          </div>
 
-            {/* Page Content */}
-            <div className="col-md-9 col-lg-10 main-content">
-              <div className="blog-content">{children}</div>
-            </div>
+          {/* Page Content */}
+          <div className="col-9">
+            {children}
           </div>
         </div>
 
